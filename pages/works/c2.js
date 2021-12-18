@@ -21,7 +21,7 @@ const Work = () => (
         Python Command-and-control servers <Badge>2021</Badge>
       </Title>
       <P>
-        It’s very common that after successful exploitation an attacker would put an agent that maintains communication with a c2 server on the compromised system, and the reason for that is very simple, having an agent that provides persistency over large periods and almost all the capabilities an attacker would need to perform lateral movement and other post-exploitation actions is better than having a reverse shell for example. There are a lot of free open source post-exploitation toolsets that provide this kind of capability, like Metasploit, Empire and many others, and even if you only play CTF's it’s most likely that you have used one of those before.
+        It’s very common that after successful exploitation an attacker would put an agent that maintains communication with a c2 server on the compromised system, and the reason for that is very simple, having an agent that provides persistency over large periods and almost all the capabilities an attacker would need to perform lateral movement and other post-exploitation actions is better than having a reverse shell for example. There are a lot of free open source post-exploitation toolsets that provide this kind of capability, like Metasploit, Empire and many others, and even if you only play CTF&apos;s it’s most likely that you have used one of those before.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -55,8 +55,8 @@ const Work = () => (
       <UnorderedList my={4}>
         <ListItem>
           <Link href="https://raw.githubusercontent.com/Hackgodybj/C2_Server_Encrypted_-_Advance/main/Demo/1.png">
-            <Badge mr={2}>Command's</Badge>
-            Command examples you can run in C2, You can view the command's using HELP command.
+            <Badge mr={2}>Command&apos;s</Badge>
+            Command examples you can run in C2, You can view the command&apos;s using HELP command.
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

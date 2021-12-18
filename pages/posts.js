@@ -22,8 +22,7 @@ const Posts = () => (
           <GridItem
             title="Github-Plus (Python C2 server)"
             thumbnail={thumbFourPainters}
-            href="https://githubplus.com/Hackgodybj/C2_Server_Encrypted_-_Advance"
-          />
+            href="https://githubplus.com/Hackgodybj/C2_Server_Encrypted_-_Advance"/>
           <GridItem
             title="HacktheBox Profile"
             thumbnail={thumbMyDeskSetup}

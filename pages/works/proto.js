@@ -31,22 +31,22 @@ const Work = () => (
       <ListItem>First make 2 or more empty objects just like shown below.</ListItem> 
       <Image src="/images/works/1.png" alt="icon" />
 
-      <ListItem>Since they are empty objects so they don't have any actions's or commands defined.</ListItem> 
+      <ListItem>Since they are empty objects so they don&apos;t have any actions&apos;s or commands defined.</ListItem> 
       <Image src="/images/works/2.png" alt="icon" />
       <ListItem>This is the Cruical point because this is the line that cause prototype pollution and overwrites all the  previous variables.</ListItem> 
-      <ListItem>let's define "Pwned" as valus in Yash object's action using __proto___ function.</ListItem> 
+      <ListItem>let&apos;s define &quot;Pwned&quot; as valus in Yash object&apos;s action using __proto___ function.</ListItem> 
       <Image src="/images/works/3.png" alt="icon" />
       </UnorderedList>
       <Heading as="h4" fontSize={18} my={6}>Why __Proto__?</Heading>
       <P>__proto__ is a way to inherit properties from an object in JavaScript. prototype is an accessor property that exposes the [[Prototype]] of the object through which it is accessed</P>
       
       <UnorderedList>
-      <Heading as="h4" fontSize={18} my={6}>It overwrites the previous object's or variable's with "Pwned" as action set to Yash's object</Heading>
+      <Heading as="h4" fontSize={18} my={6}>It overwrites the previous object&apos;s or variable&apos;s with &quot;Pwned&quot; as action set to Yash&apos;s object</Heading>
       <Image src="/images/works/4.png" alt="icon" />
       <Heading as="h4" fontSize={18} my={6}>This is how Prototype Pollution works in JavaScript..</Heading>
 
       <Heading as="h4" fontSize={18} my={6}>Key attack vectors for prototype pollution include user input fields and query parameters passed on to websites. If a site’s JavaScript code iterates through query parameters without sanitizing them, then it might end up running commands that change the object prototype.</Heading>
-      <Heading as="h4" fontSize={18} my={6}>Prototype Pollution attack vector's:</Heading>
+      <Heading as="h4" fontSize={18} my={6}>Prototype Pollution attack vector&apos;s:</Heading>
       <ListItem>Denial of Service – by triggering JavaScript exceptions</ListItem>
       <ListItem>Remote Code Execution – by tampering with the application source code to force the code path that the attacker injects</ListItem>
       <ListItem>XSS (Cross site scripting).</ListItem>
@@ -70,8 +70,8 @@ const Work = () => (
         <ListItem>
           <Link href="https://book.hacktricks.xyz/pentesting-web/deserialization/nodejs-proto-prototype-pollution#rce-abusing-environmental-variables">
             <Badge mr={2}>Hacktricks article</Badge>
-            Basically, if a new process using node is spawned and you are able to poison the environmental variables it's possible to execute arbitrary commands.
-It's also possible to poison environmental variables y setting the env property in some object inside JS.{' '}
+            Basically, if a new process using node is spawned and you are able to poison the environmental variables it&apos;s possible to execute arbitrary commands.
+It&apos;s also possible to poison environmental variables y setting the env property in some object inside JS.{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -111,11 +111,11 @@ It's also possible to poison environmental variables y setting the env property 
         <ListItem>
           <Badge mr={2}>Object.create(null)</Badge>
           <span>
-            Objects created using the Object.create(null) function won’t have the__proto__ attribute.
+            Objects created using the Object.create(null) function won&apos;t have the__proto__ attribute.
           </span>
         </ListItem>
         <ListItem>
-          <Badge mr={2}>recursive merge function's</Badge>
+          <Badge mr={2}>recursive merge function&apos;s</Badge>
           <span>
              pay attention when using recursive merge functions, since they are more prone to Prototype Pollution vulnerabilities than other functions. 
           </span>

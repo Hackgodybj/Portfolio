@@ -72,7 +72,7 @@ const Home = () => (
         </Heading>
         <Paragraph>
           HackGodybj is my alias for cybersec or the internet my real name is Yash Bhardwaj and I am from India.
-          passion for testing systems and creating Exploitation framework's. 
+          passion for testing systems and creating Exploitation framework&apos;s. 
           I love Python and React-JS. Recently, I built a C2-server and Symbian framework using my skills.
           {' '}
           <NextLink href="/works/symbian">

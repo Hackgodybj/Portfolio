@@ -30,29 +30,29 @@ const Work = () => (
       <P>In Python you can serialize objects by using pickle.dumps():</P>
        <Heading as="h4" variant="section-title">Example:</Heading>
         <P>import pickle</P>
-        <P>pickle.dumps(['hackgod', 'python', 78, 100])</P>
+        <P>pickle.dumps([&apos;hackgod&apos;, &apos;python&apos;, 78, 100])</P>
         <Heading as="h4" variant="section-title">The pickled representation we’re getting back from dumps will look like this:</Heading>
-        <P>b'\x80\x04\x95\x1c\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x07hackgod\x94\x8c\x06python\x94KNKde.'</P>
+        <P>b&apos;\x80\x04\x95\x1c\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x07hackgod\x94\x8c\x06python\x94KNKde.&apos;</P>
         <Heading as="h4" variant="section-title">Reading the serialized data back in::</Heading>
         <P>import pickle</P>
-        <P>pickle.loads(b'\x80\x04\x95\x1c\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x07hackgod\x94\x8c\x06python\x94KNKde.')</P>
+        <P>pickle.loads(b&apos;\x80\x04\x95\x1c\x00\x00\x00\x00\x00\x00\x00]\x94(\x8c\x07hackgod\x94\x8c\x06python\x94KNKde.&apos;)</P>
         <Heading as="h4" variant="section-title">our list object...</Heading>
-        <P>['hackgod', 'python', 78, 100]</P>
+        <P>[&apos;hackgod&apos;, &apos;python&apos;, 78, 100]</P>
       <Heading as="h4" fontSize={16} my={6}>Theory:</Heading>
       <P>What is actually happening behind the scenes is that the byte-stream created by dumps contains opcodes that are then one-by-one executed as soon as we load the pickle back in. If you are curious how the instructions in this pickle look like, you can use pickletools to create a disassembly: </P>      
         <Heading as="h4" variant="section-title">Code representation:</Heading>
-        <P>>>> import pickle</P>
-        <P>>>> data = pickle.dumps(['hackgod', 'python', 78, 100])</P>
-        <P>>>> import pickletools</P>
-        <P>>>> pickletools.dis(data)</P>
+        <P>&gt;&gt;&gt; import pickle</P>
+        <P>&gt;&gt;&gt; data = pickle.dumps([&apos;hackgod&apos;, &apos;python&apos;, 78, 100])</P>
+        <P>&gt;&gt;&gt; import pickletools</P>
+        <P>&gt;&gt;&gt; pickletools.dis(data)</P>
         <P>    0: \x80 PROTO      4</P>
         <P>    2: \x95 FRAME      28</P>
         <P>   11: ]    EMPTY_LIST</P>
         <P>   12: \x94 MEMOIZE    (as 0)</P>
         <P>   13: (    MARK</P>
-        <P>   14: \x8c     SHORT_BINUNICODE 'hackgod'</P>
+        <P>   14: \x8c     SHORT_BINUNICODE &apos;hackgod&apos;</P>
         <P>   23: \x94     MEMOIZE    (as 1)</P>
-        <P>   24: \x8c     SHORT_BINUNICODE 'python'</P>
+        <P>   24: \x8c     SHORT_BINUNICODE &apospython&apos</P>
         <P>   32: \x94     MEMOIZE    (as 2)</P>
         <P>   33: K        BININT1    78</P>
         <P>   35: K        BININT1    100</P>
@@ -88,7 +88,7 @@ const Work = () => (
         <ListItem>
           <Link href="https://gist.githubusercontent.com/mgeeky/cbc7017986b2ec3e247aab0b01a9edcd/raw/fb6e62345c58ba4ac01f98aa18ecdafbf17d73bb/pickle-payload.py">
             <Badge mr={2}>Python pickle RCE Payload</Badge>
-            Python's Pickle Remote Code Execution payload template. 
+            Python&aposs Pickle Remote Code Execution payload template. 
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -96,7 +96,7 @@ const Work = () => (
         <ListItem>
           <Link href="https://github.com/moreati/pickle-fuzz">
             <Badge mr={2}>Python Pickle Fuzzer by moreati</Badge>
-            Rehabilitating Python's pickle module{' '}
+            Rehabilitating Python&aposs pickle module{' '}
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
