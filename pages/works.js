@@ -69,6 +69,12 @@ const Works = () => (
           >
             Remote access trojans (RATs) are malware designed to allow an attacker to remotely control an infected computer.
           </WorkGridItem>
+        </Section>
+        <Section delay={0.3}>
+          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
+            A VR Creative tools for fashion brands
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
       
 
