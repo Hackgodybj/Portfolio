@@ -6,7 +6,9 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import thumbWalknote from '../public/images/works/walknote_eyecatch.png'
 import thumbFourPainters from '../public/images/works/the-four-painters_eyecatch.jpg'
-import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'  
+import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
+import thumbModeTokyo from '../public/images/contents/rat.png'
+import thumbStyly from '../public/images/works/styly_eyecatch.png'
 import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
 import thumbFreeDBTagger from '../public/images/works/proto.jpg'
 import thumbAmembo from '../public/images/works/log4j_02.jpg'
@@ -50,6 +52,30 @@ const Works = () => (
         </Section>
       </SimpleGrid>
 
+  <Section delay={0.2}>
+        <Divider my={6} />
+
+        <Heading as="h3" fontSize={20} mb={4}>
+          Projects
+        </Heading>
+      </Section>
+
+      <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section delay={0.3}>
+          <WorkGridItem
+            id="rat"
+            thumbnail={thumbModeTokyo}
+            title="Remote Access Trojan (C#)"
+          >
+            Remote access trojans (RATs) are malware designed to allow an attacker to remotely control an infected computer.
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.3}>
+          <WorkGridItem id="styly" thumbnail={thumbStyly} title="Styly">
+            A VR Creative tools for fashion brands
+          </WorkGridItem>
+        </Section>
+      </SimpleGrid>
       
 
       <Section delay={0.4}>
