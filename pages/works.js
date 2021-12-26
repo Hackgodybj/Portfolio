@@ -10,6 +10,7 @@ import thumbMenkiki from '../public/images/works/menkiki_eyecatch.png'
 import thumbModeTokyo from '../public/images/contents/rat.png'
 import thumbPichu2 from '../public/images/works/pichu2_eyecatch.png'
 import thumbFreeDBTagger from '../public/images/works/proto.jpg'
+import thumblogforge from '../public/images/works/card.png'
 import thumbAmembo from '../public/images/works/log4j_02.jpg'
 
 const Works = () => (
@@ -100,6 +101,17 @@ const Works = () => (
             Apache Log4j is a Java-based logging utility, It is part of the Apache Logging Services, a project of the Apache Software Foundation. Log4j is one of several Java logging frameworks.
           </WorkGridItem>
         </Section>
+
+                <Section delay={0.5}>
+          <WorkGridItem
+            id="logforge"
+            thumbnail={thumblogforge}
+            title="LogForge (Hackthebox Medium)"
+          >
+            Apache tomcat running with vulnerable log4j exploited using YsoSerial Java Deserialization Exploit Kit and JNDI exploit kit to execute code without classpath loading.  
+          </WorkGridItem>
+        </Section>
+
       </SimpleGrid>
     </Container>
   </Layout>
