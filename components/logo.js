@@ -17,18 +17,18 @@ const LogoBox = styled.span`
   }
 
   &:hover img {
-    transform: rotate(75deg);
+    transform: rotate(180deg);
   }
 `
 
 const Logo = () => {
-  const footPrintImg = `/images/1{useColorModeValue('', '-dark')}.png`
+  const footPrintImg = `/images/12.png`
 
   return (
     <Link href="/">
       <a>
         <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
+          <Image src={footPrintImg} width={30} height={30} alt="logo" />
           <Text
             color={useColorModeValue('gray.800', 'whiteAlpha.900')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
